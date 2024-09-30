@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';*/
 import './App.css';
 import { RouterProvider } from 'react-router-dom';
+import { AxiosProvider } from './contexts/AxiosContext';
 import router from './router';
 
 const App = () => {
@@ -11,7 +12,9 @@ const App = () => {
   return (
     <>
       <h1>{import.meta.env.VITE_APP_TITLE}</h1>
-      <RouterProvider router={router} />
+      <AxiosProvider>
+        <RouterProvider router={router} />
+      </AxiosProvider>
       {/*<div>
         <a href='https://vitejs.dev' target='_blank'>
           <img src={viteLogo} className='logo' alt='Vite logo' />
