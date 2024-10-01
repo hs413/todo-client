@@ -10,4 +10,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)), // '@'를 'src' 디렉토리로 설정
     },
   },
+  server: {
+    port: 3000,
+  },
 });
