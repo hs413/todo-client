@@ -1,5 +1,6 @@
 import { useAxios } from '@/contexts/AxiosContext';
-import Counter from './Counter.tsx';
+import Counter from './Counter';
+import AsyncCounter from './AsyncCounter';
 import { useEffect } from 'react';
 
 const Login = () => {
@@ -20,6 +21,7 @@ const Login = () => {
   return (
     <>
       <Counter></Counter>
+      <AsyncCounter></AsyncCounter>
       <div>Login</div>
     </>
   );
