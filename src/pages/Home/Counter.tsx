@@ -1,4 +1,4 @@
-import { useCounterStore } from '../../store/useCounterStore';
+import { useCounterStore } from '@/store/useCounterStore';
 
 const Counter = () => {
   const { value, increment, decrement, incrementByAmount } = useCounterStore();

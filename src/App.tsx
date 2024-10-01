@@ -5,13 +5,13 @@ import './App.css';
 import { RouterProvider } from 'react-router-dom';
 import { AxiosProvider } from './contexts/AxiosContext';
 import router from './router';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   // const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>{import.meta.env.VITE_APP_TITLE}</h1>
       <AxiosProvider>
         <RouterProvider router={router} />
       </AxiosProvider>

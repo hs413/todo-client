@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useCounterStore } from '../../store/useAsyncCounterStore.ts';
+import { useCounterStore } from '@/store/useAsyncCounterStore.ts';
 
 const AsyncCounter = () => {
   const { value, status, increment, decrement, incrementByAmount, fetchCounterValue } = useCounterStore();
