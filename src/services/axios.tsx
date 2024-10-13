@@ -13,9 +13,9 @@ const api = axios.create({
 api.interceptors.request.use(
   config => {
     // 필요한 경우 여기서 토큰을 추가
-    const token = localStorage.getItem('token');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+    const accessToken = localStorage.getItem('accessToken');
+    if (accessToken) {
+      config.headers.Authorization = `Bearer ${accessToken}`;
     }
     return config;
   },

@@ -19,7 +19,7 @@ const Login = () => {
       console.log(response);
 
       const { accessToken, refreshToken } = response.data;
-      // localStorage.setItem('token', token); // 로컬 스토리지에 토큰 저장
+      localStorage.setItem('accessToken', accessToken); // 로컬 스토리지에 토큰 저장
       console.log(accessToken);
       console.log(refreshToken);
 
